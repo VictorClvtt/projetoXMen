@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <title>Projeto X-Men - Semana do Zero Ao Programador Contratado</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <img class="logo" src="./src/images/logo.svg" alt="Logo X-Men">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem</h1>
+            <ul class="lista-de-personagens">
+                <li onmouseover="selectCharacter('ciclope')" class="personagem selecionado" id="ciclope">
+                    <img src="./src/images/card-ciclope.jpg" alt="Ciclope">
+                </li>
+                
+                <li onmouseover="selectCharacter('jean-grey')" class="personagem" id="jean-grey">
+                    <img src="./src/images/card-jean-grey.jpg" alt="Jean Grey">
+                </li>
+
+                <li onmouseover="selectCharacter('lince-negra')" class="personagem" id="lince-negra">
+                    <img src="./src/images/card-lince-negra.jpg" alt="Lince Negra">
+                </li>
+
+                <li onmouseover="selectCharacter('tempestade')" class="personagem" id="tempestade">
+                    <img src="./src/images/card-tempestade.jpg" alt="Tempestade">
+                </li>
+
+                <li onmouseover="selectCharacter('vampira')" class="personagem" id="vampira">
+                    <img src="./src/images/card-vampira.jpg" alt="Vampira">
+                </li>
+
+                <li onmouseover="selectCharacter('wolverine')" class="personagem" id="wolverine">
+                    <img src="./src/images/card-wolverine.jpg" alt="Wolverine">
+                </li>
+
+                <li onmouseover="selectCharacter('noturno')" class="personagem" id="noturno">
+                    <img src="./src/images/card-noturno.jpg" alt="Noturno">
+                </li>
+
+                <li onmouseover="selectCharacter('magneto')" class="personagem" id="magneto">
+                    <img src="./src/images/card-magneto.jpg" alt="Magneto">
+                </li>
+            </ul>
+        </section>
+
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/images/card-ciclope.png" alt="Ciclope">
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controla-los</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
